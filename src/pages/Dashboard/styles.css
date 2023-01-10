@@ -2,9 +2,15 @@
 	font-size: 20px;
 	height: 800px;
 	display: grid;
+	grid-auto-flow: column;
 	grid-template-rows: 1fr 1fr;
 	grid-template-columns: 1fr 1fr;
 	gap: 1em;
+}
+
+.db__devtools {
+	padding: 0;
+	display: absolute;
 }
 
 .subcontainer {

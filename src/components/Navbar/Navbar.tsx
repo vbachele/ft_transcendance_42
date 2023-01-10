@@ -101,7 +101,7 @@ const Navbar = ({player}: IProps) => {
 				</Link>
 				<hr />
 				{/* SETTINGS */}
-				<Link to="/settings" className="navbar__subMenu-link" onClick={ToggleSubMenu}>
+				<Link to="/dashboard/5" className="navbar__subMenu-link" onClick={ToggleSubMenu}>
 					<img className="navbar__subMenu-link-logo" src={settings}/>
 					<p>Settings</p>
 					<img className="navbar__subMenu-link-arrow filter-white" src={arrow} />

@@ -10,4 +10,5 @@ const getRandomPlayer = async (id?: number): Promise<IUser> => {
 	return players[rand];
 }
 
+	
 export default getRandomPlayer;

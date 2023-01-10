@@ -23,7 +23,7 @@
 .leaderboard__slot {
 	text-decoration: none;
 	color: black;
-	margin: 30px 5%;
+	margin: 1em 5%;
 	background-color: #F6F6F7;
 	box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 2px;
 	border-radius: 8px;
@@ -46,7 +46,6 @@
 .leaderboard__slot__player {
 	display: flex;
 	align-items: center;
-	width: 120px;
 }
 
 .leaderboard__slot__player-avatar {
@@ -64,12 +63,7 @@
 	display: flex;
 	justify-content: center;
 	gap: 5%;
-}
-
-.rankList__search p {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	margin-bottom: 1em;
 }
 
 .rankList__search__name,
@@ -77,6 +71,13 @@
 	border-radius: 8px;
 	padding: 8px;
 	border: 1px solid #949494;
+}
+
+.rankList__search__count {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .empty {
@@ -98,7 +99,7 @@
 	justify-content: space-evenly;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
 	.leaderboard__slot__games,
 	.leaderboard__slot__wins,
 	.leaderboard__slot__ratio,
@@ -108,12 +109,6 @@
 }
 
 @media (max-width: 500px) {
-	.leaderboard__slot {
-		font-size: 100%;
-	}
-}
-
-@media (max-width: 350px) {
 	.leaderboard__slot__player-avatar,
 	.leaderboard__slot__score,
 	.subtitle {
@@ -121,6 +116,7 @@
 	}
 	.leaderboard__slot {
 		justify-content: space-around;
+		font-size: 100%;
 	}
 	.empty {
 		font-size: 15px;
@@ -132,5 +128,6 @@
 		flex-direction: column;
 		height: 80px;
 		justify-content: space-between;
+		margin-bottom: 3em;
 	}
 }

@@ -45,7 +45,7 @@ const RankList = ({players}: IProps) => {
 					<option value="Assembly">Assembly</option>
 					<option value="Alliance">Alliance</option>
 				</select>
-				<p>
+				<p className="rankList__search__count">
 					{players
 						.filter(filterCoalition)
 						.filter(player => player.score > 0).length} player(s)
