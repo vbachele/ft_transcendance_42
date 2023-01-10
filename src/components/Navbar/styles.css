@@ -29,10 +29,14 @@
 	text-decoration: none;
 }
 
-.navbar__avatar {
-	width: 40px;
+.avatar {
 	border-radius: 50%;
 	cursor: pointer;
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.navbar__avatar {
+	width: 50px;
 	margin-left: 30px;
 }
 

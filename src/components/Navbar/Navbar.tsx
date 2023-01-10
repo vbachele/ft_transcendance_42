@@ -43,12 +43,8 @@ const Navbar = ({player}: IProps) => {
 
 	return (
 		<nav className="navbar">
-			<img src={logo} className="navbar__logo" />
-			<ul className="navbar__menu">
-				<li className="navbar__menu-item"><Link to="/">Play</Link></li>
-				<li className="navbar__menu-item"><Link to="/leaderboard">Leaderboard</Link></li>
-			</ul>
-			<img src={player.image} className="navbar__avatar" ref={avatarRef} onClick={ToggleSubMenu} />
+			<Link to={"/"}><img src={logo} className="navbar__logo" /></Link>
+			<img src={player.image} className="navbar__avatar avatar" ref={avatarRef} onClick={ToggleSubMenu} />
 
 			{/* SUB MENU */}
 			<CSSTransition
@@ -61,7 +57,7 @@ const Navbar = ({player}: IProps) => {
 			<div ref={subMenuRef} className="navbar__subMenu closed" onClick={ToggleSubMenu}>
 					<div className="navbar__subMenu__user">
 						<Link to="/dashboard" className="navbar__subMenu__user-link">
-							<img src={player.image} />
+							<img className="avatar" src={player.image} />
 						</Link>
 						<div className="navbar__subMenu__user__name-coa">
 							<h3>{player.name}</h3>
