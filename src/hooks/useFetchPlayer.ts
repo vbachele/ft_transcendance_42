@@ -18,7 +18,7 @@ const useFetchPlayer = (id?: number) => {
 
 	useEffect(() => {
 		fetchPlayer();
-	}, []);
+	}, [id]);
 
 	return player;
 }
