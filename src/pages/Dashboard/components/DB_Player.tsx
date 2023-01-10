@@ -1,3 +1,5 @@
+import getRanks from 'helpers/getRanks';
+import { useEffect } from 'react';
 import { IUser } from 'types/models';
 
 interface IProps {
@@ -5,6 +7,7 @@ interface IProps {
 }
 
 const DashboardPlayer = ({player}: IProps) => {
+	const { globalRank, coalitionRank } = getRanks(player);
 
 	return (
 		<div className='db__player subcontainer'>
@@ -13,11 +16,11 @@ const DashboardPlayer = ({player}: IProps) => {
 				<img src={`/src/assets/${player.coalition.toLowerCase()}.svg`} />
 				<div className='db__player__coa__ranks'>
 					<div className='db__player__coa__ranks-global'>
-						<h4>#285</h4>
+						<h4>{`#${globalRank}`}</h4>
 						<p className='subtitle'>Global</p>
 					</div>
 					<div className='db__player__coa__ranks-coa'>
-						<h4>#124</h4>
+						<h4>{`#${coalitionRank}`}</h4>
 						<p className='subtitle'>Coalition</p>
 					</div>
 				</div>

@@ -1,0 +1,14 @@
+{
+	"players": [
+		{"id":1,"name":"Kippax","image":"https://robohash.org/praesentiumquasinostrum.png?size=50x50&set=set1","coalition":"Assembly","games":5,"wins":0,"ratio":0.0,"achievements":["Achievement 1","Achievement 2"],"score":50},
+		{"id":2,"name":"Lucus","image":"https://robohash.org/adipiscieaquevelit.png?size=50x50&set=set1","coalition":"Order","games":44,"wins":8,"ratio":0.18,"achievements":["Achievement 1","Achievement 2"],"score":896},
+		{"id":3,"name":"Comfort","image":"https://robohash.org/etetrerum.png?size=50x50&set=set1","coalition":"Alliance","games":92,"wins":83,"ratio":0.9,"achievements":["Achievement 1","Achievement 2"],"score":8056},
+		{"id":4,"name":"Dillet","image":"https://robohash.org/hicnecessitatibusquas.png?size=50x50&set=set1","coalition":"Federation","games":60,"wins":40,"ratio":0.67,"achievements":["Achievement 1","Achievement 2"],"score":3674},
+		{"id":5,"name":"Avraam","image":"https://robohash.org/explicaborepudiandaevoluptas.png?size=50x50&set=set1","coalition":"Alliance","games":47,"wins":3,"ratio":0.06,"achievements":["Achievement 1","Achievement 2"],"score":625},
+		{"id":6,"name":"Kernar","image":"https://robohash.org/adipisciasperioresfuga.png?size=50x50&set=set1","coalition":"Federation","games":72,"wins":42,"ratio":0.58,"achievements":["Achievement 1","Achievement 2"],"score":3792},
+		{"id":7,"name":"Mille","image":"https://robohash.org/estquiaillum.png?size=50x50&set=set1","coalition":"Order","games":13,"wins":0,"ratio":0.0,"achievements":["Achievement 1","Achievement 2"],"score":130},
+		{"id":8,"name":"O'Fogarty","image":"https://robohash.org/quasetin.png?size=50x50&set=set1","coalition":"Alliance","games":47,"wins":33,"ratio":0.7,"achievements":["Achievement 1","Achievement 2"],"score":3043},
+		{"id":9,"name":"Wyborn","image":"https://robohash.org/ipsamexpeditaaccusamus.png?size=50x50&set=set1","coalition":"Order","games":100,"wins":98,"ratio":0.98,"achievements":["Achievement 1","Achievement 2"],"score":9741},
+		{"id":10,"name":"Mault","image":"https://robohash.org/aliquidquisvoluptas.png?size=50x50&set=set1","coalition":"Order","games":14,"wins":3,"ratio":0.21,"achievements":["Achievement 1","Achievement 2"],"score":314}
+	]
+}

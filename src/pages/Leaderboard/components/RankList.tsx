@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Rank from "./Rank";
 import { IUser } from "types/models";
+import compareScore from "helpers/compareScore";
 
 interface IProps {
 	players: IUser[];
@@ -53,7 +54,7 @@ const RankList = ({players}: IProps) => {
 			</div>
 
 			{players
-				.sort((a, b) => (a.score > b.score) ? -1 : (a.score === b.score) ? ((a.wins > b.wins) ? -1 : 1) : 1)
+				.sort(compareScore)
 				.filter(player => player.score > 0)
 				.filter(filterCoalition)
 				.filter((player) =>
@@ -64,7 +65,7 @@ const RankList = ({players}: IProps) => {
 				.map((player: IUser) => (
 					<Rank
 						player={player}
-						rank={players.filter(filterCoalition).indexOf(player) +1}
+						rank={players.filter(filterCoalition).indexOf(player) + 1}
 						key={player.id}
 					/>
 				))}
