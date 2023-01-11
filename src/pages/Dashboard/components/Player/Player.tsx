@@ -14,14 +14,16 @@ const DashboardPlayer = ({player}: IProps) => {
 	return (
 		<div className='db__player subcontainer'>
 			<div className='db__player__coa'>
-				<h4 className='db__player__coa-name'>The {player.coalition}</h4>
-				<img className='db__player__coa-flag' src={`/src/assets/${player.coalition.toLowerCase()}.svg`} />
+				<Link to='/leaderboard' state={{ selectedOption: player.coalition, rank: coalitionRank }}>
+					<h4 className='db__player__coa-name'>The {player.coalition}</h4>
+					<img className='db__player__coa-flag' src={`/src/assets/${player.coalition.toLowerCase()}.svg`} />
+				</Link>
 				<div className='db__player__coa__ranks'>
 					<Link to='/leaderboard' state={{ selectedOption: 'All', rank: coalitionRank }}>
-					<div className='db__player__coa__ranks-global'>
-							<h4>{`#${globalRank}`}</h4>
-							<p className='subtitle'>Global</p>
-					</div>
+						<div className='db__player__coa__ranks-global'>
+								<h4>{`#${globalRank}`}</h4>
+								<p className='subtitle'>Global</p>
+						</div>
 					</Link>
 					<Link to='/leaderboard' state={{ selectedOption: player.coalition, rank: coalitionRank }}>
 						<div className='db__player__coa__ranks-coa'>
