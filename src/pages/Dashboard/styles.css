@@ -9,12 +9,6 @@
 	gap: 1em;
 }
 
-.tmpDash a {
-	transform: translate3d(-80px, -800px, 0);
-	display: flex;
-	flex-direction: column;
-}
-
 .subcontainer {
 	border-radius: 4px;
 	padding: 0.5em;

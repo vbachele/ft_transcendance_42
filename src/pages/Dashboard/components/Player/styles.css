@@ -21,6 +21,11 @@
 	gap: 10%;
 }
 
+.db__player__coa__ranks > a {
+	text-decoration: none;
+	color: black;
+}
+
 /* PROFILE */
 
 .db__player__profile {

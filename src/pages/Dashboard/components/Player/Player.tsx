@@ -1,11 +1,8 @@
 import getRanks from 'helpers/getRanks';
 import { IUser } from 'types/models';
 import { Progress } from 'antd';
-import addFriend from 'assets/add-friend.png';
-import message from 'assets/message.png';
-import invite from 'assets/invite.png';
-import watchGame from 'assets/watch-game.png';
 import './styles.css';
+import { Link } from 'react-router-dom';
 
 interface IProps {
 	player: IUser;
@@ -20,14 +17,18 @@ const DashboardPlayer = ({player}: IProps) => {
 				<h4 className='db__player__coa-name'>The {player.coalition}</h4>
 				<img className='db__player__coa-flag' src={`/src/assets/${player.coalition.toLowerCase()}.svg`} />
 				<div className='db__player__coa__ranks'>
+					<Link to='/leaderboard'>
 					<div className='db__player__coa__ranks-global'>
-						<h4>{`#${globalRank}`}</h4>
-						<p className='subtitle'>Global</p>
+							<h4>{`#${globalRank}`}</h4>
+							<p className='subtitle'>Global</p>
 					</div>
-					<div className='db__player__coa__ranks-coa'>
-						<h4>{`#${coalitionRank}`}</h4>
-						<p className='subtitle'>Coalition</p>
-					</div>
+					</Link>
+					<Link to='/leaderboard' state={{ selectedOption: player.coalition }}>
+						<div className='db__player__coa__ranks-coa'>
+							<h4>{`#${coalitionRank}`}</h4>
+							<p className='subtitle'>Coalition</p>
+						</div>
+					</Link>
 				</div>
 			</div>
 			<div className='db__player__profile'>

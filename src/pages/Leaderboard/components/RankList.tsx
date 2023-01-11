@@ -5,10 +5,11 @@ import compareScore from "helpers/compareScore";
 
 interface IProps {
 	players: IUser[];
+	selectedOption: string;
 }
 
-const RankList = ({players}: IProps) => {
-	const [selectedCoalition, setSelectedCoalition] = useState('All');
+const RankList = ({players, selectedOption}: IProps) => {
+	const [selectedCoalition, setSelectedCoalition] = useState(selectedOption);
 	const [search, setSearch] = useState("");
 
 	const handleCoalitionChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
@@ -37,7 +38,7 @@ const RankList = ({players}: IProps) => {
 					name="coalitions"
 					id="coalition"
 					onChange={handleCoalitionChange}
-					defaultValue="All"
+					defaultValue={selectedOption}
 					className="rankList__search__coalition"
 				>
 					<option value="All">All Coalitions</option>
