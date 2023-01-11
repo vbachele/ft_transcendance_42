@@ -2,19 +2,17 @@
 	font-size: 20px;
 	height: 800px;
 	display: grid;
-	grid-auto-flow: column;
-	grid-auto-flow: column;
 	grid-template-rows: 50% 50%;
 	grid-template-columns: 50% 50%;
 	gap: 1em;
 }
 
 .subcontainer {
-	border-radius: 4px;
-	padding: 0.5em;
 	background-color: var(--red10);
 	border: 1px solid var(--red50);
-	box-shadow: var(--shadow-soft);
+	/* box-shadow: var(--shadow-soft); */
+	border-radius: 4px;
+	padding: 0.5em;
 	display: grid;
 	grid-template-columns: 1.5fr 3fr;
 	grid-template-rows: 1.5fr 1fr;

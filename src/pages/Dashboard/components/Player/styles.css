@@ -85,6 +85,7 @@
 
 .db__player__options {
 	display: flex;
+	flex-direction: column;
 	flex-wrap: wrap;
 	gap: 0.5em;
 	justify-content: center;

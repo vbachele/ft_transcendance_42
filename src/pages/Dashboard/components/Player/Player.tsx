@@ -56,10 +56,7 @@ const DashboardPlayer = ({player}: IProps) => {
 				</div>
 			</div>
 			<div className='db__player__options'>
-				<button>Add friend</button>
-				<button>Message</button>
-				<button>Invite</button>
-				<button>Watch</button>
+				<button>View Profile</button>
 			</div>
 			<div className='db__player__stats'>
 				<div className='Games Played'>
