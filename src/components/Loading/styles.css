@@ -6,7 +6,7 @@
 }
 
 .loading__title {
-	color: #E04F5F;
+	color: var(--red100);
 	margin: 0 0 30px 0;
 }
 
@@ -31,7 +31,7 @@
 	top: 15px;
 	width: 10px;
 	height: 10px;
-	background-color: #E04F5F;
+	background-color: var(--red100);
 	border-radius: 50%;
 	animation: ballbounce 0.7s ease-out infinite;
 }

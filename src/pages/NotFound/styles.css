@@ -7,7 +7,7 @@
 .notFound__title {
 	font-size: 9em;
 	font-weight: 800;
-	color: #E04F5F;
+	color: var(--red100);
 }
 
 .notFound__gif {

@@ -6,6 +6,6 @@
 	margin: 8px 16px;
 	padding: 14px 40px;
 	border-radius: 37px;
-	background: #E04F5F;
+	background: var(--red100);
 	color: white;
 }

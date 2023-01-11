@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+	--red10: rgba(224, 79, 96, 0.10);
+	--red50: rgba(224, 79, 96, 0.50);
+	--red70: rgba(224, 79, 96, 0.70);
+	--red90: rgba(224, 79, 96, 0.90);
+	--red100: rgba(224, 79, 96, 1);
+	--green: #4BAE4F;
+	--shadow-hard: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+	--shadow-soft: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
 * {
 	margin: 0;
 	padding: 0;

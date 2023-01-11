@@ -32,7 +32,7 @@
 .avatar {
 	border-radius: 50%;
 	cursor: pointer;
-	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+	box-shadow: var(--shadow-hard);
 }
 
 .navbar__avatar {
@@ -59,7 +59,7 @@
 }
 
 .navbar__subMenu {
-	background-color: #E04F5F;
+	background-color: var(--red100);
 	position: absolute;
 	z-index: 0;
 	top: 100%;
@@ -68,7 +68,7 @@
 	border-radius: 6px;
 	padding: 20px;
 	margin: 10px;
-	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+	box-shadow: var(--shadow-hard);
 }
 
 .navbar__subMenu__user {

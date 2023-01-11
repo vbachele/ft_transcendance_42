@@ -6,7 +6,7 @@
 }
 
 .error__title {
-	color: #E04F5F;
+	color: var(--red100);
 	margin: 0 0 30px 0;
 }
 

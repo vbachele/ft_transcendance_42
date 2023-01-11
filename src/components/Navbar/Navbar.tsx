@@ -1,16 +1,16 @@
-import { useState, useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useState, useRef, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group';
-import logo from "assets/logo.svg";
-import arrow from "assets/arrow.svg";
-import play from "assets/play.png";
-import watch from "assets/watch.png";
-import chat from "assets/chat.png";
-import leaderboard from "assets/leaderboard.png";
-import stats	 from "assets/stats.png";
-import settings from "assets/settings.png";
-import logout from "assets/logout.png";
-import { IUser } from "types/models";
+import logo from 'assets/logo.svg';
+import arrow from 'assets/arrow.svg';
+import play from 'assets/play.png';
+import watch from 'assets/watch.png';
+import chat from 'assets/chat.png';
+import leaderboard from 'assets/leaderboard.png';
+import stats	 from 'assets/stats.png';
+import settings from 'assets/settings.png';
+import logout from 'assets/logout.png';
+import { IUser } from 'types/models';
 import './styles.css'
 
 interface IProps {

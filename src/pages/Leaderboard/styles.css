@@ -25,7 +25,7 @@
 	color: black;
 	margin: 1em 5%;
 	background-color: #F6F6F7;
-	box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 2px;
+	box-shadow: var(--shadow-hard);
 	border-radius: 8px;
 	border-color: white;
 	align-items: center;
@@ -39,19 +39,24 @@
 	transition: transform 0.2s;
 }
 
+
 .leaderboard__slot:hover {
 	transform: scale(1.01);
 }
 
 .leaderboard__slot__player {
 	display: flex;
+	justify-content: left;
+	transform: translateX(-50px);
 	align-items: center;
+	width: 100px;
+
 }
 
 .leaderboard__slot__player-avatar {
 	width: 50px;
 	border-radius: 50%;
-	box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px;
+	box-shadow: var(--shadow-hard);
 	margin: auto 10px;
 }
 
@@ -99,7 +104,7 @@
 	justify-content: space-evenly;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
 	.leaderboard__slot__games,
 	.leaderboard__slot__wins,
 	.leaderboard__slot__ratio,
@@ -113,6 +118,9 @@
 	.leaderboard__slot__score,
 	.subtitle {
 		display: none;
+	}
+	.leaderboard__slot__player{
+		transform: translateX(0);
 	}
 	.leaderboard__slot {
 		justify-content: space-around;
