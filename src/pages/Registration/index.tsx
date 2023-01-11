@@ -14,7 +14,7 @@ const RegistrationPage = () => {
       <BackButton></BackButton>
       <div className="CreateYourProfile">
         <H2Title >Create Your Profile</H2Title>
-        <Subtitle display="none">Ajout subtitle pour préciser l’action souhiatée</Subtitle>
+        <Subtitle display="none">Ajout subtitle pour préciser l’action souhaitée</Subtitle>
         <UploadAvatar></UploadAvatar>
         <UpdateNickname ></UpdateNickname>
       </div>

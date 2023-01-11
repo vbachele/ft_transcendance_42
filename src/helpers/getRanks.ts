@@ -7,7 +7,7 @@ function isEqual(player1: IUser, player2: IUser): boolean {
 }
 
 function getRanks(player: IUser) {
-	const { data, isLoading, error } = useFetch<IUser[]>('http://localhost:8000/players');
+	const { data, isLoading, error } = useFetch<IUser[]>('http://localhost:3000/players');
 	let rankedPlayers: IUser[];
 	let globalRank: number = NaN;
 	let coalitionRank: number = NaN;

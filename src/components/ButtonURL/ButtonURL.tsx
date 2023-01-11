@@ -10,6 +10,6 @@ const ButtonURL = ({text, url}: IButtonURL) => {
 	return (
 		<Link to={url} className="button-url">{text}</Link>
 	);
-}	
+}
 
 export default ButtonURL;

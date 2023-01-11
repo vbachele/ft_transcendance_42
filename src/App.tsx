@@ -1,9 +1,4 @@
-import './App.css'
-import { 
-  BrowserRouter as Router,
-  Route, 
-  Routes, 
-  } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import {UserContextProvider} from "components/Context/userContent"
 import LandingPage from 'pages/Landing'
 import RegistrationPage from 'pages/Registration'
@@ -12,14 +7,9 @@ import { PictureContextProvider } from 'components/Context/pictureContent'
 import Leaderboard from 'pages/Leaderboard';
 import Dashboard from 'pages/Dashboard';
 import NotFound from 'pages/NotFound';
-import useFetchPlayer from 'hooks/useFetchPlayer';
-
-
+import './App.css'
 
 function App() {
-
-  const player = useFetchPlayer();
-
   return (
     <UserContextProvider>
     <PictureContextProvider>
@@ -39,4 +29,4 @@ function App() {
    )
 }
 
-export default App
+export default App;
