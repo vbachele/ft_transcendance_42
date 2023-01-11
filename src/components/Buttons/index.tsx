@@ -35,6 +35,4 @@ export const SecondaryButton = styled(Button)`
 	submit =
 `
 
-
-
-export default Button
+export default Button;
