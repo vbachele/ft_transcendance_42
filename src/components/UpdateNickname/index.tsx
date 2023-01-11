@@ -2,7 +2,7 @@ import { SecondaryButton } from 'components/Buttons'
 import { NormalText } from 'components/Text'
 import React, { ChangeEventHandler, useContext, useEffect, useRef, useState} from 'react'
 import styled from 'styled-components'
-import { backend } from 'Lib/backend'
+import { backend } from 'lib/backend'
 import { useNavigate } from 'react-router-dom';
 import UserContext from 'components/Context/userContent'
 
@@ -21,7 +21,7 @@ const UpdateNicknameLayout = styled.div`
   gap: 10px;
   padding-top: 40px;
   padding-bottom: 56px;
-  
+
   height: 70px;
 
   /* Inside auto layout */
@@ -43,9 +43,9 @@ const UpdateNicknameLayout__Input = styled.input`
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 28px;  
+  line-height: 28px;
   /* Inside auto layout */
-  
+
   flex: none;
   order: 1;
   align-self: stretch;
@@ -56,7 +56,7 @@ const UpdateNicknameLayout__Input = styled.input`
   padding-left: 24px;
 
   /* Here I define the css of my placeholder */
-  ::placeholder 
+  ::placeholder
   {
     font-family: 'Montserrat';
     font-style: normal;
@@ -68,7 +68,7 @@ const UpdateNicknameLayout__Input = styled.input`
   @media only screen and (max-width: 768px) {
     width: 320px;
     height: 50px;
-    
+
 `
 
 const UpdateNickname = () => {
@@ -76,7 +76,7 @@ const UpdateNickname = () => {
   const [value, setValue] = useState('');
   let navigate = useNavigate(); // Use navigate allow to take the Route and to navigate to other page
   const userContext = useContext(UserContext);
-  
+
   const handleChange:ChangeEventHandler<HTMLInputElement> = (event) =>
   {
     userContext.setUser({nickname: event.target.value})
@@ -94,17 +94,17 @@ const UpdateNickname = () => {
       <NicknameForm className='NicknameForm' onSubmit={handleSubmit}>
       <UpdateNicknameLayout>
         <NormalText fontWeight={"600"} fontSize={"14px"}>Choose a Nickname *</NormalText>
-        <UpdateNicknameLayout__Input 
+        <UpdateNicknameLayout__Input
           type="text" required value={value}
           name='UpdateName'
-          onChange={handleChange} 
-          placeholder="ex: VincentCollègueShadow" 
-          maxLength={8} 
+          onChange={handleChange}
+          placeholder="ex: VincentCollègueShadow"
+          maxLength={8}
           minLength={2}
         />
       </UpdateNicknameLayout>
       <SecondaryButton type='submit'>Continue</SecondaryButton>
-  
+
       </NicknameForm>
   )
 }
